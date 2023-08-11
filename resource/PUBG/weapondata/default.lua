@@ -1,6 +1,6 @@
 loading={5}
 
-sensitivityrate={1.0}
+sensitivityrate={2.5}
 
 debug={false}
 

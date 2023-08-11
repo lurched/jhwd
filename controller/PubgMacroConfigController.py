@@ -1,5 +1,4 @@
 import os
-import tempfile
 import json
 from enum import Enum
 from model.KeyBinding import KeyBinding
@@ -10,7 +9,7 @@ from model.PubgStatus import Status
 from model.Settings import Settings
 from view.widgets.PubgMacroConfigWidget import MacroEditDialog, QMacroConfig
 
-tempdir = tempfile.gettempdir()
+tempdir = "C:/Users/Dip/AppData/Local/jhwd"
 
 class AimMode(Enum):
 
@@ -267,7 +266,7 @@ class MacroConfigController():
 
         mainscript = self.macroFunctions["script"]
         result = mainscript.openContent.format(
-            tempfile.tempdir.replace("\\", "/")+"/config.lua")
+            "C:/Users/Dip/AppData/Local/jhwd"+"/config.lua")
         with open(save_path, "w") as f:
             f.write(result)
 

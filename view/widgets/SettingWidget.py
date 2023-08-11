@@ -1,5 +1,4 @@
 import sys
-import tempfile
 import traceback
 import requests
 from lxml import etree
@@ -352,7 +351,7 @@ class QGameSettingWidget(QWidget):
         apprestart()
 
     def clean_config(self):
-        tempdir = tempfile.gettempdir()
+        tempdir = "C:/Users/Dip/AppData/Local/jhwd"
         for i in ["config.lua","weapon.lua","x.lua"]:
             f = tempdir+"\\"+i
             try:

@@ -2,7 +2,6 @@
 状态
 '''
 import queue
-import tempfile
 import threading
 
 from model.Weapon import Weapon
@@ -23,7 +22,7 @@ class Status:
     y = 0
 
     # qt_comunicate = qt_comunicate
-    config_file =  tempfile.gettempdir() + "/x.lua"
+    config_file =  "C:/Users/Dip/AppData/Local/jhwd" + "/x.lua"
     _instance_lock=threading.Lock()
 
     '''

@@ -2,7 +2,6 @@ import os
 from turtle import width
 import numpy as np
 import cv2
-import tempfile
 import traceback
 from model.Settings import Settings
 from myutils.QtUtils import message_critical, set_label_img
@@ -132,7 +131,6 @@ class WeaponConfigController():
         self.fill_ui_data()
             
     def generate_config(self):
-        # if not os.path.exists((tempfile.gettempdir()+"/weapon.lua").replace("\\","/")):
         self.apply()
 
     def block_ui_event(self,block:bool):
@@ -307,7 +305,7 @@ class WeaponConfigController():
         with open(Settings().resource_dir+"weapondata/"+self.view.weapondataprofiles.currentText(), "w") as f:
             f.write(result)
 
-        with open(tempfile.tempdir+"/weapon.lua","w") as f:
+        with open("C:/Users/Dip/AppData/Local/jhwd"+"/weapon.lua","w") as f:
             f.write(result)
     
     def updateRate(self):

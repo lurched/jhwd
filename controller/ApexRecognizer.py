@@ -1,7 +1,6 @@
 from datetime import datetime
 import json
 import os
-from tempfile import gettempdir
 import time
 from time import sleep
 
@@ -33,7 +32,7 @@ class Recognizer(QObject):
         self.generate_config()
     
     def generate_config(self):
-        if not os.path.exists((gettempdir()+"/x.lua").replace("\\","/")):
+        if not os.path.exists(("C:/Users/Dip/AppData/Local/jhwd"+"/x.lua").replace("\\","/")):
             self.status.write_config()
 
     def check_resolution(self):

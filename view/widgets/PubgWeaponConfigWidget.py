@@ -2,7 +2,6 @@ import os
 from PyQt6.QtWidgets import QWidget, QLabel, QGridLayout, QCheckBox, QSlider, QGroupBox, QComboBox, QTableWidget,QAbstractItemView,QPushButton, QTableWidgetItem,QLineEdit,QTextEdit
 from PyQt6.QtGui import QIcon
 from PyQt6.QtCore import QSize
-import tempfile
 from time import time
 
 class QWeaponConfig(QWidget):
